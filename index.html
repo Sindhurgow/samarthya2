@@ -6,29 +6,34 @@
   <title>SAMARTHYA Registration | IEEE SSIT SB</title>
   <title>Desktop View Reminder</title>
   <style>
-      #popup {
-          display: none;
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background: #fff;
-          padding: 20px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          border-radius: 12px;
-          z-index: 9999;
-          text-align: center;
-      }
-      #popup button {
-          margin-top: 10px;
-          padding: 8px 16px;
-          border: none;
-          background-color: #007bff;
-          color: white;
-          border-radius: 5px;
-          cursor: pointer;
-      }
-  </style>
+        body.blur {
+            filter: blur(8px);
+            overflow: hidden;
+        }
+
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            z-index: 9999;
+            text-align: center;
+        }
+        #popup button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
   <link rel="stylesheet" href="styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,28 +47,30 @@
 </head>
 <body>
 
-  <div id="popup">
-    <p>For a better experience, please switch to "Desktop Site" view in your browser settings.</p>
-    <button onclick="closePopup()">Got it!</button>
-</div>
+ <div id="popup">
+        <p>For a better experience, please switch to "Desktop Site" view in your browser settings.</p>
+        <button onclick="closePopup()">Got it!</button>
+    </div>
 
-<script>
-    function isMobileDevice() {
-        return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
-
-    function showPopup() {
-        if (isMobileDevice()) {
-            document.getElementById('popup').style.display = 'block';
+    <script>
+        function isMobileDevice() {
+            return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         }
-    }
 
-    function closePopup() {
-        document.getElementById('popup').style.display = 'none';
-    }
+        function showPopup() {
+            if (isMobileDevice()) {
+                document.getElementById('popup').style.display = 'block';
+                document.body.classList.add('blur');
+            }
+        }
 
-    window.onload = showPopup;
-</script>
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.body.classList.remove('blur');
+        }
+
+        window.onload = showPopup;
+    </script>
 
   <!-- Header Section -->
 
