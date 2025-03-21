@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SAMARTHYA Registration | IEEE SSIT SB</title>
-  <title>Desktop View Reminder</title>
-  <style>
+ <title>Desktop View Reminder</title>
+    <style>
         body.blur {
             filter: blur(8px);
             overflow: hidden;
@@ -21,8 +21,9 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 12px;
-            z-index: 9999;
+            z-index: 10000; /* Ensure popup is above the blur */
             text-align: center;
+            color: black; /* Text in black */
         }
         #popup button {
             margin-top: 10px;
