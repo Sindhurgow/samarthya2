@@ -1,0 +1,512 @@
+/* Importing font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1c1f26, #343a40);
+  color: #f1f1f1;
+}
+
+/* Header styling */
+header {
+  background: url('https://via.placeholder.com/1500x500?text=Avengers+Theme') no-repeat center center/cover;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 40vh; /* Adjust as needed for vertical centering */
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+
+header::after {
+  content: "";
+  /*background: #ffc067;*/
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  word-spacing: 5ch;
+}
+
+header h1, header p {
+  position: relative;
+  z-index: 1;
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(244, 247, 244);
+  /*text-shadow: 2px 2px 8px #000;*/
+
+}
+
+/* IEEE Chapters Logos Section */
+.ieee-logos {
+  padding: 20px;
+  text-align: center;
+  background-color: #dce5f7;
+  color: #527af1;
+  width: 100%;
+  font-family: noto sans mono;
+
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: #527af1;
+}
+
+.logos-container img {
+  width: auto;
+  height: 70px;
+}
+
+.events-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+
+
+
+/* General Section Styling */
+.events-section {
+    padding: 50px 20px;
+    background-color: #dce5f7;
+    color: #527af1;
+    text-align: center;
+    font-family: bebas neue;
+  }
+  
+  .events-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .event-decor {
+    position: absolute;
+    top: 200%;
+    width: 500px;
+    transform: translateY(-50%);
+  }
+  
+  .event-decor.left {
+    left: 10px; /* Adjust spacing from the left edge */
+    width: 500px;
+    top: 175%;
+  }
+  
+  .event-decor.right {
+    right: 10px; /* Adjust spacing from the right edge */
+    width: 500px;
+    top: 155%;
+    padding: -55%;
+  }
+  
+  /* Optional: Adjust the size of the decorative images */
+  .event-decor {
+    width: 50px; /* Set your desired width */
+    height: auto;
+    padding-top: 82%;
+  }
+  
+  
+  /* Card Stack Container */
+  .card-stack {
+    position: relative;
+    width: 320px;
+    height: 420px; /* Adjust height as needed */
+    margin: 0 auto;
+    perspective: 1000px; /* Adds 3D depth to child cards */
+    align-items: center;
+  }
+  
+  /* Card Styling */
+  .card {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: #f3d4f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    cursor: grab;
+  }
+  
+  /* Slight offset for overlapping effect (all cards, except the top one, are slightly shifted) */
+  .card:not(:last-child) {
+    transform: scale(0.95) translateY(10px);
+  }
+  
+  /* 3D Hover Effect on the top card */
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Text Styling */
+  .card h1 {
+    margin-bottom: 10px;
+    color: #200102;
+  }
+  
+  .card p {
+    font-size: 0.95em;
+    line-height: 1.4;
+    color: rgb(19, 81, 239);
+    font-family: bebas neue;
+    text-align: center;
+    text-wrap: wrap;
+    font-style: bold|italic;
+  }
+  
+  
+  .reset-btn {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #e62429;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-btn:hover {
+    background-color: #c51d22;
+  }
+  .location {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .temp-container{
+    width: 45vw;
+  }
+
+  .main-samarthya-heading{
+    font-size: 60px;
+    font-family: bebas neue;
+  }
+
+  .main-samarthya-para{
+    font-size: 26px;
+  }
+
+  .about-samarthya-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    background-color: #dce5f7;
+    color: #527af1;
+    font-family: noto sans mono;
+    font-style: boldx;
+  }
+
+  .about-samarthya-para{
+    padding: 0px 10%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .about-samarthya-heading{
+    font-family: "Bebas Neue";
+    font-size: 32px;
+  }
+
+  .ieee-chapter-heading{
+    color: #4d5452;
+    font-family: 'Gill Sans';
+    font-size: 28px;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-heading{
+    margin-right: 20px;
+  }
+
+  .location-card{
+    margin-right: 50px;
+  }
+
+
+
+  /* 
+.location-card {
+  background-color: #f3d4f0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 320px;
+  height: 420px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  text-align: center;
+}
+
+
+.btn.locate-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #e62429;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.locate-btn:hover {
+  background-color: #c51d22;
+}
+/*
+
+.events-section {
+    padding: 40px 20px;
+    background-color: #6156f6;
+    font-family: bebas neue;
+    text-align: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    perspective: 1000px; 
+  }
+
+  .card {
+    background-color: #f3d4f0;
+    padding: 20px;
+    border-radius: 8px;
+    border-color: black;
+    width: 280px;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+  }
+  
+
+  .card:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+  }
+  
+  
+  .card {
+    transform: rotateY(0deg);
+  }
+*/
+  
+
+/* Sponsors Section */
+.sponsors-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #2b2f36;
+}
+
+.sponsors-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sponsors-container img {
+  width: 120px;
+  height: auto;
+}
+
+/* Registration Section */
+.registration-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #40444b;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #e62429;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #c51d22;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1f26;
+  font-size: 0.9em;
+}
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+  /* Adjust header font sizes and vertical padding */
+  header {
+    height: 60vh; /* Reduce header height on mobile */
+  }
+  .header-content {
+    padding-top: 20vh; /* Adjust vertical centering */
+  }
+  .main-samarthya-heading {
+    font-size: 40px;
+  }
+  .main-samarthya-para {
+    font-size: 18px;
+  }
+  
+  /* Adjust IEEE logos section */
+  .logos-container img {
+    height: 50px; /* Smaller logos */
+  }
+
+  /* Flex container adjustments: Stack card deck and location card vertically */
+  .events-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Make card stack full width on mobile */
+  .card-stack {
+    width: 90%;
+    height: auto; /* Let the height adjust automatically */
+    margin: 0 auto;
+  }
+  
+  /* Adjust individual card sizes if needed */
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  
+  /* Adjust the location card to stack below the card deck */
+  .location-card {
+    width: 90%;
+    margin: 20px 0;
+  }
+  
+  /* Optionally adjust decorative images if they overlap too much */
+  .event-decor {
+    width: 40px;
+  }
+}
+
+
+/* Base styles for all devices */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Desktop styles */
+.header-content {
+  padding-top: 40vh; /* Vertically center on larger screens */
+  text-align: center;
+}
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+  .header-content {
+    padding-top: 20vh; /* Adjust vertical centering */
+    font-size: 0.9em;
+  }
+  .main-heading {
+    font-size: 40px;
+  }
+  .main-para {
+    font-size: 18px;
+  }
+  /* Example: Adjust card container width */
+  .card-stack {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+/* Desktop Only Overlay Styles */
+#desktopOnlyOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  color: #000;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Initially hide main content until desktop view is detected */
+#mainContent {
+  display: none;
+}
+
+/* ... Rest of your existing CSS ... */
+
