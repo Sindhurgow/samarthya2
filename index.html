@@ -4,11 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SAMARTHYA Registration | IEEE SSIT SB</title>
- <title>Desktop View Reminder</title>
+<title>Desktop View Reminder</title>
     <style>
-        body.blur {
-            filter: blur(8px);
-            overflow: hidden;
+        body.blur::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            z-index: 9999; /* Ensure blur is below the popup */
         }
 
         #popup {
@@ -25,6 +32,7 @@
             text-align: center;
             color: black; /* Text in black */
         }
+
         #popup button {
             margin-top: 10px;
             padding: 8px 16px;
@@ -48,7 +56,7 @@
 </head>
 <body>
 
- <div id="popup">
+<div id="popup">
         <p>For a better experience, please switch to "Desktop Site" view in your browser settings.</p>
         <button onclick="closePopup()">Got it!</button>
     </div>
