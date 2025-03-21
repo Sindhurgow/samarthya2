@@ -2,122 +2,194 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Responsive meta tag -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SAMARTHYA Registration | IEEE SSIT SB</title>
+  <title>Desktop View Reminder</title>
+  <style>
+      #popup {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: #fff;
+          padding: 20px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          border-radius: 12px;
+          z-index: 9999;
+          text-align: center;
+      }
+      #popup button {
+          margin-top: 10px;
+          padding: 8px 16px;
+          border: none;
+          background-color: #007bff;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+  </style>
   <link rel="stylesheet" href="styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <!-- Desktop Only Overlay -->
-  <div id="desktopOnlyOverlay">
-    <h2>Desktop View Required</h2>
-    <p>Please switch to a desktop view (or use desktop mode) to view the site.</p>
-  </div>
 
-  <!-- Main website content wrapped inside #mainContent -->
-  <div id="mainContent">
-    <!-- Header Section -->
-    <section class="ieee-logos">
-      <h2 class="ieee-chapter-heading">SSIT - IEEE - SB</h2>
-      <div class="logos-container">
-        <img src="https://media-hosting.imagekit.io//fdb3c1010e6248a7/download.png?Expires=1837103504&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=2Obu2LfH6YQSvEnfdR5YkwwQjVp6vsU91NbA0ToXyAiMlL1taI6oWWfFCdokWYQwF4taZH6~U~B660eSS0T-g-3MWlm9Lqq~OIbuwnS8oT7GhjJAI9rUXDATxjHD1e15bAjW6Fjr8IZQrxoCn8UCiiOFCaC8LK15WuDtaDJRmdtP4961~10MULaU64XIW4DByJs14JZ~UFdBhGvlYYBndWU6TgN~mElMSqtO8dCygU0eVAAv6YyIFy1w0jSYRQaGkQsna-pfL9vFQjO0j2omdw0h2S9PJcjjtrURislpDyvg5lFJAydmp4k3lECzWXV3-5XYZs8w3oi~PTiH86kL-A__" alt="ssit" />
-        <img src="https://media-hosting.imagekit.io//55160402e0ec4c88/IEEE-banglore-Section-Blue-300x75-2.png?Expires=1837102651&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nDAJ3uqrK7cMLS5unBQWVOZLC2YYnfUgyEvB~FfVh--uyqBhTvykrzFpRclcDqq4guvVhcKJPQnQ3sXwDgGXUC684WjDwiKjJy3pC1fk7vwIf9WCOA3dRV0IcsrPLiJca87QyXFwQPD-39-b62FhLzV~wAFurWD2OXWwmu73ndxHPfcQz~d33qof4GigKwbCAlRZnXM1iMztznwXBaK33yzTQm4plFN1Ysqjsh~8puJdARfVRWRH7lx3ZAgu2hkmSHSazf-OiuMNdGQMkHjl5j7e9DWc9UJesM2v~dCFi~mW~RB05fdA7QhNB9pXQ529nOq0d3ym4s2hEsLcaSMkDw__" alt="IEEE-BS">
-        <img src="https://media-hosting.imagekit.io//6bb6a6576ab64177/IMG-20220607-WA0017-removebg-preview-pq9krfnqom5dtk76fcxckg2o5wbvy2vkfqza21iyts-1.png?Expires=1837102788&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=xds8~Ul1gLjlVr2zX04XnvlxQNIdVnTyRKvzY98X2~z0~FZFy59UAH8pfelXm7jVpW7JpUVHqpmRHnzDI6I6~tictSAr3kJvGY7qVgRIKSi82MQ5BHIh7W54XpPhq8nrOCpJIW23DZKRusM9tLpWvqE55tyZNCkHiuqq2jp4u~4u0k5JkPyfcRnCHlTzIaUyCc7PY3WEZcd2AFxiBvrD-0KggH7x9UOmLIcPKcJEx1AnvjJXp3yWNiNcmxSXUfuoazQIaq-oGwFAiLAB6u-Vb2otLM46D7cipCFItbb06xjWaqvx~WCz75idTNp-YsJbEv~-zBPe1OOK1ZWM9I1w7Q__" alt="WIE">
-        <img src="https://media-hosting.imagekit.io//48bbede06d154167/cass-logo.gif?Expires=1837103026&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=A08VpfksOGbcXx6FzK8zRhYw1xjox-8zMyjZBNa9fump4j6LjwugH2OClyFhVJuWPlbCo-uvmFnLBgVmtTMJwOZgRW1Rcz3ZPtOPExX4taahgT0Tz09BucvCeFMuM87iSBu494oy~vymcOM63Yio7Iy3faiVowkY8z8vUl88f5~FPTMEJ5F-LSQ2NvbbSb7s-XCXdXq0tywhhpEMjJ-iF5780~dF6PaIXZvNbW4REVxS9~OkS2ztuNwTrLOQFlRzMlHLQxxB90cSdXepnjZd8EeV3mrHeWbB3zGIm0Lsr3A7XlM~2u3TFue3V~VWfVddkAZchzTVw9Jn3jmPyG8Hg__" alt="CASS">
-        <img src="https://media-hosting.imagekit.io//b5ea66e296af4f05/download.png?Expires=1837103143&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=rwRnl4IXUeYtRiw0brCWOSB~1v80PopjCm44DNQGDG1meMhrXCLCO8p34Q-480gIPoX7BODUVIN57lNf8vscXmrr50IHW2NrKV9Yhn2m1FfdPlSHP~jlYWgDPTGsthN5HiqXAWJcfunwKmiW74ijQiamvEcZm5JMwPMCW9fHD56~C2RAK4an8abWLpu9iUUHn~wanVuxIlYtDb7rXDC~humSUrNnYjsMKLcNYCH9zeF5h~d3ES2VZJD1e1giCIntflnZfcEubM206JvjjfiZSvQB9pzgy4QbbrTZLNJBS8T8-jiGn5k72jh3z6t9aI6Tqi33c51QJqz6izlg9r5GVA__" alt="sensors" />
-        <img src="https://media-hosting.imagekit.io//245460942b0a4d07/download.jpg?Expires=1837103646&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VOaWNncojoouVSRBEZEgkkRGfYpSHXEsXUNUuok70lYZuA7~5Ihwu4yGnPKBw1~faHOdiAxrK4ps9vzVL9B3AE3kmYSClNh4hsdTLc8tDQOkWlI26ZugKh1mfO9DPJ3Z0b~6hN~b4CzEIfT0J~qyNQgFlJ3tb66h5TkbuKm8JtLC9xkgYSuX7v4OFxk2NfzJYyG8zIQMI~MBh4fobVAPz~OXI~CGlxJcukAqaTmiHFKo3f5N6K8gpJirgi6UzWj3gyxUdPSOb2ryUjmpW9SJNlnNjlG1YqP-BK6-9XXfgmmfiyOpHmv0Ir0O7fRnoade966Zi3ROpRaf6ntPe-AFuA__" alt=""SSAHE />
-      </div>
-    </section>
+  <div id="popup">
+    <p>For a better experience, please switch to "Desktop Site" view in your browser settings.</p>
+    <button onclick="closePopup()">Got it!</button>
+</div>
 
-    <header>
-      <video autoplay muted loop id="bg-video">
-        <source src="header.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="header-content">
-        <h1 class="main-samarthya-heading">SAMARTHYA</h1>
-        <p class="main-samarthya-para">A flagship event by IEEE SSIT SB</p>
-      </div>
-    </header>
-
-    <div class="about-samarthya-container">
-      <h2 class="about-samarthya-heading">About Samarthya</h2>
-      <p class="about-samarthya-para">
-        Samarthya, IEEE SSIT student branch’s flagship event, seamlessly blends knowledge with enjoyment. With stellar speakers, technical events, project exhibitions, paper presentations and fun-filled activities,
-        it is a dynamic platform that enriches students with the latest industry insights and fosters a vibrant learning environment.
-      </p>
-    </div>
-
-    <!-- Events Listing Section as Deck of Cards -->
-    <section class="events-section">
-      <div class="location">
-        <div class="temp-container">
-          <h2>Events Stack</h2>
-          <div class="card-stack">
-            <!-- Your card elements here -->
-            <div class="card">
-              <h1>Web Page Design</h1>
-              <p>Unleash your creativity by designing innovative and visually striking web pages...</p>
-            </div>
-            <!-- More cards... -->
-          </div>
-          <!-- Reset Button -->
-          <button id="resetButton" class="reset-btn">Reset Cards</button>
-        </div>  
-
-        <div class="location-card">
-          <h2>Location Details</h2>
-          <p>Find us at our campus.</p>
-          <a href="https://maps.app.goo.gl/kXE52UtXtF7k9ddT8" target="_blank" class="btn locate-btn">Locate Us</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Registration Section -->
-    <section class="registration-section">
-      <h2>Join the Team!</h2>
-      <p>Ready to be a part of the action? Click below to register!</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSebuYFvtbtMWM7-zJAPhWOANoKcogjHv0w6i2n02OGiBguh1Q/viewform?usp=sharing" class="btn register-btn" target="_blank">Register Now</a>
-    </section>
-
-    <footer>
-      <h3 class="footer-heading">Any quries :-</h3>
-      <div>
-        <p>Sindhur H K: <span>8217555390</span></p>
-        <p>Yashas M: <span>8618077060</span></p>
-        <p>Faizan: <span>9148566452</span></p>
-      </div>
-    </footer>
-  </div><!-- End of #mainContent -->
-
-  <!-- Existing script -->
-  <script src="script.js"></script>
-  <!-- Desktop view check script -->
-  <script>
-    const threshold = 1024; // Desktop width threshold in pixels
-    const overlay = document.getElementById('desktopOnlyOverlay');
-    const mainContent = document.getElementById('mainContent');
-
-    function checkDesktopView() {
-      if (window.innerWidth < threshold) {
-        overlay.style.display = 'flex';
-        mainContent.style.display = 'none';
-      } else {
-        overlay.style.display = 'none';
-        mainContent.style.display = 'block';
-      }
+<script>
+    function isMobileDevice() {
+        return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
-    window.addEventListener('load', checkDesktopView);
-    window.addEventListener('resize', checkDesktopView);
-  </script>
+    function showPopup() {
+        if (isMobileDevice()) {
+            document.getElementById('popup').style.display = 'block';
+        }
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    window.onload = showPopup;
+</script>
+
+  <!-- Header Section -->
+
+  <section class="ieee-logos">
+    <h2 class="ieee-chapter-heading">SSIT - IEEE - SB</h2>
+    <div class="logos-container">
+      <img src="https://media-hosting.imagekit.io//fdb3c1010e6248a7/download.png?Expires=1837103504&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=2Obu2LfH6YQSvEnfdR5YkwwQjVp6vsU91NbA0ToXyAiMlL1taI6oWWfFCdokWYQwF4taZH6~U~B660eSS0T-g-3MWlm9Lqq~OIbuwnS8oT7GhjJAI9rUXDATxjHD1e15bAjW6Fjr8IZQrxoCn8UCiiOFCaC8LK15WuDtaDJRmdtP4961~10MULaU64XIW4DByJs14JZ~UFdBhGvlYYBndWU6TgN~mElMSqtO8dCygU0eVAAv6YyIFy1w0jSYRQaGkQsna-pfL9vFQjO0j2omdw0h2S9PJcjjtrURislpDyvg5lFJAydmp4k3lECzWXV3-5XYZs8w3oi~PTiH86kL-A__" alt="ssit" />
+      <img src="https://media-hosting.imagekit.io//55160402e0ec4c88/IEEE-banglore-Section-Blue-300x75-2.png?Expires=1837102651&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nDAJ3uqrK7cMLS5unBQWVOZLC2YYnfUgyEvB~FfVh--uyqBhTvykrzFpRclcDqq4guvVhcKJPQnQ3sXwDgGXUC684WjDwiKjJy3pC1fk7vwIf9WCOA3dRV0IcsrPLiJca87QyXFwQPD-39-b62FhLzV~wAFurWD2OXWwmu73ndxHPfcQz~d33qof4GigKwbCAlRZnXM1iMztznwXBaK33yzTQm4plFN1Ysqjsh~8puJdARfVRWRH7lx3ZAgu2hkmSHSazf-OiuMNdGQMkHjl5j7e9DWc9UJesM2v~dCFi~mW~RB05fdA7QhNB9pXQ529nOq0d3ym4s2hEsLcaSMkDw__" alt="IEEE-BS">
+      <img src="https://media-hosting.imagekit.io//6bb6a6576ab64177/IMG-20220607-WA0017-removebg-preview-pq9krfnqom5dtk76fcxckg2o5wbvy2vkfqza21iyts-1.png?Expires=1837102788&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=xds8~Ul1gLjlVr2zX04XnvlxQNIdVnTyRKvzY98X2~z0~FZFy59UAH8pfelXm7jVpW7JpUVHqpmRHnzDI6I6~tictSAr3kJvGY7qVgRIKSi82MQ5BHIh7W54XpPhq8nrOCpJIW23DZKRusM9tLpWvqE55tyZNCkHiuqq2jp4u~4u0k5JkPyfcRnCHlTzIaUyCc7PY3WEZcd2AFxiBvrD-0KggH7x9UOmLIcPKcJEx1AnvjJXp3yWNiNcmxSXUfuoazQIaq-oGwFAiLAB6u-Vb2otLM46D7cipCFItbb06xjWaqvx~WCz75idTNp-YsJbEv~-zBPe1OOK1ZWM9I1w7Q__" alt="WIE">
+      <img src="https://media-hosting.imagekit.io//48bbede06d154167/cass-logo.gif?Expires=1837103026&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=A08VpfksOGbcXx6FzK8zRhYw1xjox-8zMyjZBNa9fump4j6LjwugH2OClyFhVJuWPlbCo-uvmFnLBgVmtTMJwOZgRW1Rcz3ZPtOPExX4taahgT0Tz09BucvCeFMuM87iSBu494oy~vymcOM63Yio7Iy3faiVowkY8z8vUl88f5~FPTMEJ5F-LSQ2NvbbSb7s-XCXdXq0tywhhpEMjJ-iF5780~dF6PaIXZvNbW4REVxS9~OkS2ztuNwTrLOQFlRzMlHLQxxB90cSdXepnjZd8EeV3mrHeWbB3zGIm0Lsr3A7XlM~2u3TFue3V~VWfVddkAZchzTVw9Jn3jmPyfG8Hg__" alt="CASS">
+      <img src="https://media-hosting.imagekit.io//b5ea66e296af4f05/download.png?Expires=1837103143&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=rwRnl4IXUeYtRiw0brCWOSB~1v80PopjCm44DNQGDG1meMhrXCLCO8p34Q-480gIPoX7BODUVIN57lNf8vscXmrr50IHW2NrKV9Yhn2m1FfdPlSHP~jlYWgDPTGsthN5HiqXAWJcfunwKmiW74ijQiamvEcZm5JMwPMCW9fHD56~C2RAK4an8abWLpu9iUUHn~wanVuxIlYtDb7rXDC~humSUrNnYjsMKLcNYCH9zeF5h~d3ES2VZJD1e1giCIntflnZfcEubM206JvjjfiZSvQB9pzgy4QbbrTZLNJBS8T8-jiGn5k72jh3z6t9aI6Tqi33c51QJqz6izlg9r5GVA__" alt="sensors" />
+      <img src="https://media-hosting.imagekit.io//245460942b0a4d07/download.jpg?Expires=1837103646&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VOaWNncojoouVSRBEZEgkkRGfYpSHXEsXUNUuok70lYZuA7~5Ihwu4yGnPKBw1~faHOdiAxrK4ps9vzVL9B3AE3kmYSClNh4hsdTLc8tDQOkWlI26ZugKh1mfO9DPJ3Z0b~6hN~b4CzEIfT0J~qyNQgFlJ3tb66h5TkbuKm8JtLC9xkgYSuX7v4OFxk2NfzJYyG8zIQMI~MBh4fobVAPz~OXI~CGlxJcukAqaTmiHFKo3f5N6K8gpJirgi6UzWj3gyxUdPSOb2ryUjmpW9SJNlnNjlG1YqP-BK6-9XXfgmmfiyOpHmv0Ir0O7fRnoade966Zi3ROpRaf6ntPe-AFuA__" alt=""SSAHE />
+    </div>
+  </section>
+
+  <header>
+    <video autoplay muted loop id="bg-video">
+      <source src="header.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="header-content">
+      <h1 class="main-samarthya-heading">SAMARTHYA</h1>
+      <p class="main-samarthya-para">A flagship event by IEEE SSIT SB</p>
+    </div>
+
+  </header>
+
+  <div class="about-samarthya-container">
+    <h2 class="about-samarthya-heading">About Samarthya</h2>
+    <p class="about-samarthya-para">Samarthya, IEEE SSIT student branch’s flagship event, seamlessly blends knowledge with enjoyment. With stellar speakers, technical events, project exhibitions, paper presentations and fun-filled activities,
+      it is a dynamic platform that enriches students with the latest industry insights and fosters a vibrant learning environment.</p>
+  </div>
+  
+
+<!-- Events Listing Section as Deck of Cards -->
+ 
+<section class="events-section">
+  
+  <div class="location">
+    <!-- Transparent decorative images in the Events Section -->
+    <img src="spidey3.png" alt="Left Decoration" class="event-decor left">
+  <!--<img src="pngwing.com.png" alt="Right Decoration" class="event-decor right"> -->
+    <div class="temp-container">
+      <h2>Events Stack</h2>
+      <div class="card-stack">
+        <div class="card">
+          <h1>Web Page Design</h1>
+          <p>Unleash your creativity by designing innovative and visually striking web pages. Engage in hands-on sessions where you'll learn modern design techniques, coding practices, and interactive elements to create user-friendly, responsive websites.</p>
+        </div>
+        <div class="card">
+          <h1>Quiz</h1>
+          <p>Test your knowledge and quick thinking in an exhilarating quiz challenge. Compete against your peers in a fast-paced contest covering a variety of topics, and showcase your intellectual prowess while having fun.</p>
+        </div>
+        <div class="card">
+          <h1>Paper Presentation</h1>
+          <p>Present your research and innovative ideas in a formal setting. This event offers you the chance to share insights, receive expert feedback, and engage in meaningful discussions on emerging trends and breakthrough concepts</p>
+        </div>
+        <div class="card">
+          <h1>Spell Bee</h1>
+          <p>Demonstrate your mastery over language in a high-energy spelling challenge. This event not only tests your vocabulary but also hones your focus and quick reflexes as you race against time and competitors.</p>
+        </div>
+        <div class="card">
+          <h1>Debate</h1>
+          <p>Step into the arena of ideas and arguments. In this dynamic debate, you'll present and defend your viewpoints, engage with thought-provoking topics, and refine your public speaking and critical thinking skills in a competitive yet constructive environment..</p>
+        </div>
+        <div class="card">
+          <h1>Project Expo</h1>
+          <p>Showcase your innovative projects and creative solutions at our Project Expo. This platform allows you to exhibit your work, network with industry experts, and gain valuable insights that could propel your ideas to the next level.</p>
+        </div>
+        <div class="card">
+          <h1>Shark Tank</h1>
+          <p>Pitch your entrepreneurial ideas in a high-stakes, real-world simulation inspired by the popular TV show. Convince a panel of experienced investors with your innovative business proposals and strategic planning, and get ready to turn your vision into reality</p>
+        </div>
+        <div class="card">
+          <h1>Treasure Hunt</h1>
+          <p>Embark on an adventurous quest filled with challenging puzzles and hidden clues. Navigate through a series of exciting tasks designed to test your problem-solving skills and team collaboration, all while searching for the ultimate treasure.</p>
+        </div>
+        <div class="card">
+          <h1>E-Games</h1>
+          <p>Dive into the digital battleground with intense, adrenaline-pumping e-games. Compete in popular titles like Freefire and BGMI where strategy, quick reflexes, and teamwork lead to victory in the virtual arena.</p>
+        </div>
+        <div class="card">
+          <h1>Fun Games</h1>
+          <p>Experience a variety of interactive and entertaining games that promise laughter and excitement. From quick challenges to engaging group activities, these games are designed to relax, entertain, and bring out your playful spirit.</p>
+        </div>
+      </div>
+      <!-- Reset Button to Bring Back Swiped Cards -->
+      <button id="resetButton" class="reset-btn">Reset Cards</button>
+    </div>  
+    
+
+      <div class="location-card">
+        <h2>Location Details</h2>
+        <p>Find us at our campus.</p>
+        <a href="https://maps.app.goo.gl/kXE52UtXtF7k9ddT8" target="_blank" class="btn locate-btn">Locate Us</a>
+      </div>
+  </div>
+</section>
+
+  
+  
+  
+  
+  
+  
+  
+
+  <!-- Sponsors Section -->
+  
+
+  <!-- Registration Section -->
+  <section class="registration-section">
+    <h2>Join the Team!</h2>
+    <p>Ready to be a part of the action? Click below to register!</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSebuYFvtbtMWM7-zJAPhWOANoKcogjHv0w6i2n02OGiBguh1Q/viewform?usp=sharing" class="btn register-btn" target="_blank">Register Now</a>
+  </section>
+
+  <footer>
+    <h3 class="footer-heading">Any quries :-</h3>
+    <div>
+      <p>Sindhur H K: <span>8217555390</span></p>
+      <p>Yashas M: <span>8618077060</span></p>
+      <p>Faizan: <span>9148566452</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
